@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <!--
+   JavaScript: Exercise 5
+
+   GPS-ware Form 1
+   Author:
+   Date:
+
+   Filename:         form1.htm
+   Supporting files: gpsware.css, gpsware.jpg, order.js, functions.js
+
+-->
+
+    <title>Product Order Form 1</title>
+    <link href="gpsware.css" rel="stylesheet" type="text/css" />
+    <script src="order.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form id="form1" method="post" action="form2.html">
+
+        <div id="links">
+            <a href="#" class="newgroup">Home Page</a>
+            <a href="#">Product Catalog</a>
+            <a href="#">Order Form</a>
+            <a href="#">Maps Online</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="newgroup">Countries</a>
+            <a href="#">States</a>
+            <a href="#">National Parks</a>
+            <a href="#">Hiking Trails</a>
+            <a href="#">Cities</a>
+            <a href="#">Astronomical</a>
+            <a href="#">Natural</a>
+            <a href="#" class="newgroup">GoMap 1.0</a>
+            <a href="#">Drive Planner 2.0</a>
+            <a href="#">Hiker 1.0</a>
+            <a href="#">G-Receiver I</a>
+            <a href="#">G-Receiver II</a>
+            <a href="#">G-Receiver III</a>
+            <a href="#" class="newgroup">Downloads</a>
+            <a href="#">Tech Support</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div id="main">
+            <p id="logo"><img src="gpsware.jpg" alt="GPS-ware" /></p>
+            <h1>Order Form</h1>
+            <p id="datep">
+                <input class="text" id="date" name="date" size="11" value="mm-dd-yyyy" readonly="readonly" />
+            </p>
+
+            <fieldset>
+                <legend>Select a Product</legend>
+
+                <table>
+                    <tr>
+                        <td class="labelcell">Product</td>
+                        <td class="inputcell">
+                            <select name="prod" id="prod">
+                 <option value="0">Products from GPS-ware</option>
+                 <option value="19.95">GoMap 1.0 ($19.95)</option>
+                 <option value="29.95">Drive Planner 2.0 ($29.95)</option>
+                 <option value="29.95">Hiker 1.0 ($29.95)</option>
+                 <option value="149.50">G-Receiver I ($149.50)</option>
+                 <option value="199.50">G-Receiver II ($199.50)</option>
+                 <option value="249.50">G-Receiver III ($249.50)</option>
+              </select>
+
+                            <select name="qty" id="qty">
+                 <option value="0">Quantity</option>
+                 <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                 <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                 <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                 <option value="10">10</option>
+              </select>
+                        </td>
+                        <td class="outcell">
+                            <input class="num" name="price" id="price" size="7" value="0.00" readonly="readonly" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="labelcell">Shipping</td>
+                        <td>
+                            <p><input type="radio" name="shipType" id="ship1" value="4.95" />
+                                <label for="ship1">Standard (4-6 business days): $4.95</label>
+                            </p>
+                            <p><input type="radio" name="shipType" id="ship2" value="8.95" />
+                                <label for="ship2">Express (2 days): $8.95</label>
+                            </p>
+                            <p><input type="radio" name="shipType" id="ship3" value="12.95" />
+                                <label for="ship3">Next Day (1 day): $12.95</label>
+                            </p>
+                        </td>
+
+                        <td class="outcell">
+                            <input class="num" name="ship" id="ship" size="7" value="0.00" readonly="readonly" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="labelcell2">Subtotal</td>
+                        <td class="outcell">
+                            <input class="num" name="sub" size="7" value="0.00" readonly="readonly" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="labelcell2">Tax (5%)</td>
+                        <td class="outcell">
+                            <input class="num" name="tax" id="tax" size="7" value="0.00" readonly="readonly" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="labelcell2">TOTAL</td>
+                        <td class="outcell">
+                            <input class="num" name="tot" id="tot" size="7" value="0.00" readonly="readonly" />
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <p id="formbuttons">
+                <input type="reset" name="cancelb" id="cancelb" value="Cancel" />
+                <input type="submit" name="nextb" id="nextb" value="Next" />
+
+            </p>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
